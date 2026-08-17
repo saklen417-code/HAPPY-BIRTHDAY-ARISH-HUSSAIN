@@ -1,0 +1,1844 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Arish Hussain 🎂</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Baloo 2",sans-serif;
+    background:#080b24;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =====================================================
+   BACKGROUND
+===================================================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255,70,150,.18),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 30%,
+            rgba(60,180,255,.18),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(160,80,255,.15),
+            transparent 35%
+        );
+
+    pointer-events:none;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.7) 1px,
+            transparent 1px
+        );
+
+    background-size:45px 45px;
+    opacity:.08;
+
+    pointer-events:none;
+    z-index:-1;
+}
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+#loader{
+    position:fixed;
+    inset:0;
+
+    z-index:99999;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    background:
+        linear-gradient(
+            135deg,
+            #090b29,
+            #32115f,
+            #061c46
+        );
+
+    transition:1s ease;
+}
+
+.loader-cake{
+    font-size:80px;
+    animation:bounce 1s infinite alternate;
+}
+
+#loader h2{
+    margin-top:20px;
+    font-size:28px;
+}
+
+.loader-text{
+    margin-top:8px;
+    opacity:.7;
+
+    font-family:"Poppins",sans-serif;
+    font-size:13px;
+}
+
+@keyframes bounce{
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-18px);
+    }
+}
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+.music-btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+
+    z-index:5000;
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(12px);
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,.2);
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:100vh;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    overflow:hidden;
+}
+
+.hero-content{
+    position:relative;
+    z-index:10;
+
+    max-width:900px;
+}
+
+.small-title{
+    font-size:20px;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#ffd6f4;
+
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-family:"Fredoka",sans-serif;
+
+    font-size:clamp(
+        48px,
+        10vw,
+        105px
+    );
+
+    line-height:.95;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff7eb3,
+            #fff,
+            #7bdcff,
+            #d59cff,
+            #ff7eb3
+        );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    animation:
+        gradientMove 5s linear infinite;
+}
+
+@keyframes gradientMove{
+    to{
+        background-position:300%;
+    }
+}
+
+.hero-subtitle{
+    margin-top:20px;
+
+    font-size:
+        clamp(
+            20px,
+            4vw,
+            32px
+        );
+}
+
+.date{
+    display:inline-block;
+
+    margin-top:18px;
+
+    padding:8px 24px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.3);
+
+    border-radius:50px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    font-size:21px;
+}
+
+.hero-message{
+    max-width:650px;
+
+    margin:25px auto 0;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#e9e8ff;
+}
+
+.start-btn{
+    margin-top:30px;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    font-family:inherit;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    color:#16112c;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffb7d8,
+            #ffe69b,
+            #a9e8ff
+        );
+
+    box-shadow:
+        0 0 20px
+        rgba(255,150,210,.35),
+
+        0 10px 30px
+        rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+.start-btn:hover{
+    transform:
+        translateY(-4px)
+        scale(1.04);
+}
+
+/* =====================================================
+   BALLOONS
+===================================================== */
+
+.balloon{
+    position:absolute;
+
+    bottom:-160px;
+
+    width:55px;
+    height:70px;
+
+    border-radius:
+        50% 50% 45% 45%;
+
+    opacity:.8;
+
+    animation:
+        balloonUp
+        linear
+        infinite;
+}
+
+.balloon::before{
+    content:"";
+
+    position:absolute;
+
+    bottom:-15px;
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    width:2px;
+    height:80px;
+
+    background:
+        rgba(255,255,255,.5);
+}
+
+.balloon:nth-child(1){
+    left:5%;
+
+    background:#ff6ba8;
+
+    animation-duration:12s;
+}
+
+.balloon:nth-child(2){
+    left:20%;
+
+    background:#68d8ff;
+
+    animation-duration:15s;
+    animation-delay:2s;
+}
+
+.balloon:nth-child(3){
+    left:75%;
+
+    background:#ffd66b;
+
+    animation-duration:13s;
+    animation-delay:1s;
+}
+
+.balloon:nth-child(4){
+    left:90%;
+
+    background:#bd8cff;
+
+    animation-duration:17s;
+    animation-delay:3s;
+}
+
+@keyframes balloonUp{
+
+    0%{
+        transform:
+            translateY(0)
+            rotate(-4deg);
+    }
+
+    50%{
+        transform:
+            translateY(-55vh)
+            rotate(5deg);
+    }
+
+    100%{
+        transform:
+            translateY(-120vh)
+            rotate(-5deg);
+    }
+
+}
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+section{
+    padding:90px 20px;
+}
+
+.section-title{
+    text-align:center;
+
+    font-family:"Fredoka",sans-serif;
+
+    font-size:
+        clamp(
+            35px,
+            6vw,
+            55px
+        );
+
+    margin-bottom:15px;
+}
+
+.section-title span{
+    color:#ff91c8;
+}
+
+.section-subtitle{
+    text-align:center;
+
+    color:#bfc2e8;
+
+    margin-bottom:50px;
+
+    font-size:17px;
+}
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+.countdown-section{
+    background:
+        rgba(255,255,255,.025);
+}
+
+.countdown{
+    max-width:850px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+}
+
+.time-box{
+    padding:25px 10px;
+
+    text-align:center;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    border-radius:22px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,.15);
+}
+
+.time-box strong{
+    display:block;
+
+    font-family:"Fredoka",sans-serif;
+
+    font-size:
+        clamp(
+            35px,
+            6vw,
+            60px
+        );
+
+    color:#fff;
+}
+
+.time-box span{
+    color:#bfc2e8;
+}
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.message-card{
+    max-width:850px;
+
+    margin:auto;
+
+    padding:45px 35px;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.11),
+            rgba(255,255,255,.035)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    box-shadow:
+        0 25px 70px
+        rgba(0,0,0,.2);
+
+    text-align:center;
+}
+
+.message-card .quote{
+    font-size:65px;
+
+    line-height:.5;
+
+    color:#ff8dc7;
+}
+
+.message-card p{
+    margin-top:25px;
+
+    font-size:21px;
+
+    line-height:1.8;
+
+    color:#f1efff;
+}
+
+/* =====================================================
+   NEW SIMPLE + STYLISH SIGNATURE
+===================================================== */
+
+.signature{
+    margin-top:28px;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    line-height:1.8;
+
+    letter-spacing:.3px;
+
+    color:#ffd58c;
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.gallery{
+    max-width:1050px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+}
+
+.photo-card{
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    aspect-ratio:3/4;
+
+    background:#15183c;
+
+    border:
+        2px solid
+        rgba(255,255,255,.1);
+
+    box-shadow:
+        0 20px 45px
+        rgba(0,0,0,.25);
+
+    transition:.4s;
+}
+
+.photo-card:hover{
+    transform:
+        translateY(-10px)
+        rotate(1deg);
+
+    box-shadow:
+        0 25px 60px
+        rgba(255,100,180,.15);
+}
+
+.photo-card img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.photo-card:hover img{
+    transform:scale(1.08);
+}
+
+.photo-label{
+    position:absolute;
+
+    left:12px;
+    right:12px;
+    bottom:12px;
+
+    padding:10px;
+
+    border-radius:15px;
+
+    background:
+        rgba(0,0,0,.45);
+
+    backdrop-filter:blur(8px);
+
+    text-align:center;
+
+    font-weight:600;
+}
+
+/* =====================================================
+   SURPRISE
+===================================================== */
+
+.surprise-section{
+    text-align:center;
+}
+
+.gift{
+    font-size:100px;
+
+    display:block;
+
+    cursor:pointer;
+
+    animation:
+        giftShake
+        1.2s
+        infinite;
+}
+
+@keyframes giftShake{
+
+    0%,100%{
+        transform:rotate(0);
+    }
+
+    25%{
+        transform:rotate(-8deg);
+    }
+
+    75%{
+        transform:rotate(8deg);
+    }
+
+}
+
+.surprise-btn{
+    margin-top:25px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-family:inherit;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff8fc7,
+            #ffcf7d
+        );
+
+    color:#24112d;
+
+    transition:.3s;
+}
+
+.surprise-btn:hover{
+    transform:scale(1.06);
+}
+
+/* =====================================================
+   FINAL CARD
+===================================================== */
+
+.final-card{
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px 25px;
+
+    text-align:center;
+
+    border-radius:35px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,125,190,.18),
+            transparent 60%
+        ),
+        rgba(255,255,255,.05);
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+}
+
+.final-card h2{
+    font-family:"Fredoka",sans-serif;
+
+    font-size:
+        clamp(
+            40px,
+            7vw,
+            70px
+        );
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff9dca,
+            #ffe49c,
+            #9eeaff
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+}
+
+.final-card p{
+    margin-top:20px;
+
+    font-size:20px;
+
+    color:#d7d8f4;
+}
+
+/* =====================================================
+   SIMPLE + STYLISH MAMA FONT
+===================================================== */
+
+.mama{
+    margin-top:30px;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    color:#ffb8d9;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    text-align:center;
+
+    padding:35px 20px;
+
+    color:#999cc8;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:13px;
+}
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+.confetti{
+    position:fixed;
+
+    top:-20px;
+
+    width:9px;
+    height:16px;
+
+    z-index:10000;
+
+    pointer-events:none;
+
+    animation:
+        confettiFall
+        linear
+        forwards;
+}
+
+@keyframes confettiFall{
+
+    to{
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+    }
+
+}
+
+/* =====================================================
+   FIREWORK
+===================================================== */
+
+.firework{
+    position:fixed;
+
+    width:5px;
+    height:5px;
+
+    border-radius:50%;
+
+    background:white;
+
+    z-index:9999;
+
+    pointer-events:none;
+
+    animation:
+        explode
+        1s
+        ease-out
+        forwards;
+}
+
+@keyframes explode{
+
+    0%{
+        box-shadow:
+            0 0 0 0 white;
+
+        opacity:1;
+    }
+
+    100%{
+
+        box-shadow:
+            0 -100px 0 #ff72b6,
+            70px -70px 0 #ffe477,
+            100px 0 0 #6fe3ff,
+            70px 70px 0 #b98cff,
+            0 100px 0 #ff72b6,
+            -70px 70px 0 #ffe477,
+            -100px 0 0 #6fe3ff,
+            -70px -70px 0 #b98cff;
+
+        opacity:0;
+    }
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:800px){
+
+    .gallery{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:70px 16px;
+    }
+
+    .countdown{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .gallery{
+        gap:12px;
+    }
+
+    .message-card{
+        padding:35px 20px;
+    }
+
+    .message-card p{
+        font-size:18px;
+    }
+
+    .signature{
+        font-size:18px;
+    }
+
+    .mama{
+        font-size:19px;
+    }
+
+    .gift{
+        font-size:80px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     LOADER
+===================================================== -->
+
+<div id="loader">
+
+    <div class="loader-cake">
+        🎂
+    </div>
+
+    <h2>
+        Something Special Is Loading...
+    </h2>
+
+    <div class="loader-text">
+        Made with love by Saklen Mama ❤️
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MUSIC BUTTON
+===================================================== -->
+
+<button
+    class="music-btn"
+    id="musicBtn"
+    onclick="toggleMusic()">
+
+    🔇
+
+</button>
+
+
+<audio
+    id="birthdayMusic"
+    loop>
+
+    <!--
+        Music lagane ke liye:
+
+        <source
+            src="birthday.mp3"
+            type="audio/mpeg">
+    -->
+
+</audio>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header
+    class="hero"
+    id="home">
+
+    <!-- Floating balloons -->
+
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+
+
+    <div class="hero-content">
+
+        <div class="small-title">
+            A Very Special Day 🎈
+        </div>
+
+
+        <h1>
+
+            HAPPY<br>
+
+            BIRTHDAY<br>
+
+            ARISH HUSSAIN
+
+        </h1>
+
+
+        <div class="hero-subtitle">
+            Our Little Superstar ⭐
+        </div>
+
+
+        <div class="date">
+            🎂 29 SEPTEMBER 🎂
+        </div>
+
+
+        <p class="hero-message">
+
+            Today isn't just another day...
+
+            <br>
+
+            It's the day a very special person
+            came into this world! 💖
+
+        </p>
+
+
+        <button
+            class="start-btn"
+            onclick="
+            document
+            .getElementById('countdown')
+            .scrollIntoView()
+            ">
+
+            🎉 Let's Celebrate 🎉
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     COUNTDOWN
+===================================================== -->
+
+<section
+    class="countdown-section"
+    id="countdown">
+
+    <h2 class="section-title">
+
+        The Big Day Is
+        <span>Coming! 🎂</span>
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Countdown to Arish's special day
+
+    </p>
+
+
+    <div class="countdown">
+
+
+        <div class="time-box">
+
+            <strong id="days">
+                00
+            </strong>
+
+            <span>
+                Days
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <strong id="hours">
+                00
+            </strong>
+
+            <span>
+                Hours
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <strong id="minutes">
+                00
+            </strong>
+
+            <span>
+                Minutes
+            </span>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <strong id="seconds">
+                00
+            </strong>
+
+            <span>
+                Seconds
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SPECIAL MESSAGE
+===================================================== -->
+
+<section>
+
+    <h2 class="section-title">
+
+        A Special
+        <span>Message 💌</span>
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Just for you, Arish ❤️
+
+    </p>
+
+
+    <div class="message-card">
+
+
+        <div class="quote">
+            “
+        </div>
+
+
+        <p>
+
+            Dear Arish Hussain,
+
+            <br><br>
+
+            Tumhari smile hamesha aise hi bright rahe,
+            tumhari life khushiyon se bhari rahe,
+            aur tumhare har sapne ko Allah poora kare. ✨
+
+            <br><br>
+
+            Hamesha haste rehna, masti karte rehna
+            aur apni cute si smile se sabko khush
+            karte rehna. 😄🎈
+
+            <br><br>
+
+            May your birthday bring you lots of
+            happiness, beautiful memories,
+            endless smiles and a future full of
+            amazing adventures! 🌟
+
+        </p>
+
+
+        <!-- Simple + stylish -->
+
+        <div class="signature">
+
+            Lots of Love,<br>
+
+            Saklen Mama ❤️
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PHOTO GALLERY
+===================================================== -->
+
+<section>
+
+
+    <h2 class="section-title">
+
+        Little
+        <span>Memories 📸</span>
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Some beautiful moments of our birthday star ⭐
+
+    </p>
+
+
+    <div class="gallery">
+
+
+        <!-- PHOTO 1 -->
+
+        <div class="photo-card">
+
+            <img
+                src="photo1.jpg"
+                alt="Arish Hussain"
+                onerror="
+                this.src=
+                'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=700&q=80'
+                ">
+
+            <div class="photo-label">
+                Our Star ⭐
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 2 -->
+
+        <div class="photo-card">
+
+            <img
+                src="photo2.jpg"
+                alt="Arish Hussain"
+                onerror="
+                this.src=
+                'https://images.unsplash.com/photo-1602030028438-4cf153cbae9e?auto=format&fit=crop&w=700&q=80'
+                ">
+
+            <div class="photo-label">
+                Happy Moments 😊
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 3 -->
+
+        <div class="photo-card">
+
+            <img
+                src="photo3.jpg"
+                alt="Arish Hussain"
+                onerror="
+                this.src=
+                'https://images.unsplash.com/photo-1607453998774-d533f65dac99?auto=format&fit=crop&w=700&q=80'
+                ">
+
+            <div class="photo-label">
+                Cute Memories 💖
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO 4 -->
+
+        <div class="photo-card">
+
+            <img
+                src="photo4.jpg"
+                alt="Arish Hussain"
+                onerror="
+                this.src=
+                'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=700&q=80'
+                ">
+
+            <div class="photo-label">
+                Birthday Boy 🎂
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SURPRISE
+===================================================== -->
+
+<section
+    class="surprise-section">
+
+
+    <h2 class="section-title">
+
+        Arish, There's a
+        <span>Surprise! 🎁</span>
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Don't be shy... open it! 😜
+
+    </p>
+
+
+    <div
+        class="gift"
+        onclick="openSurprise()">
+
+        🎁
+
+    </div>
+
+
+    <button
+        class="surprise-btn"
+        onclick="openSurprise()">
+
+        Open Your Surprise 🎁
+
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL CARD
+===================================================== -->
+
+<section>
+
+
+    <div class="final-card">
+
+
+        <h2>
+
+            HAPPY BIRTHDAY<br>
+
+            ARISH! 🎂🎉
+
+        </h2>
+
+
+        <p>
+
+            May your life always be filled with
+            happiness, laughter, love and success. ✨
+
+            <br><br>
+
+            Keep smiling and keep shining! ⭐
+
+        </p>
+
+
+        <!-- Simple + stylish -->
+
+        <div class="mama">
+
+            — Saklen Mama ❤️
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    Made with ❤️ for
+    <b>Arish Hussain</b>
+
+    <br>
+
+    🎂 29 September 🎂
+
+</footer>
+
+
+<script>
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+window.addEventListener(
+    "load",
+    function(){
+
+        setTimeout(
+            function(){
+
+                document
+                    .getElementById("loader")
+                    .style.opacity="0";
+
+                setTimeout(
+                    function(){
+
+                        document
+                            .getElementById("loader")
+                            .style.display="none";
+
+                    },
+                    1000
+                );
+
+            },
+            1800
+        );
+
+    }
+);
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+function getNextBirthday(){
+
+    const now = new Date();
+
+    let year =
+        now.getFullYear();
+
+
+    let birthday =
+        new Date(
+            year,
+            8,
+            29,
+            0,
+            0,
+            0
+        );
+
+
+    if(now > birthday){
+
+        birthday =
+            new Date(
+                year + 1,
+                8,
+                29,
+                0,
+                0,
+                0
+            );
+
+    }
+
+
+    return birthday;
+
+}
+
+
+function updateCountdown(){
+
+    const now =
+        new Date();
+
+
+    const birthday =
+        getNextBirthday();
+
+
+    const difference =
+        birthday - now;
+
+
+    if(difference <= 0){
+
+        document
+            .getElementById("days")
+            .innerText="00";
+
+        document
+            .getElementById("hours")
+            .innerText="00";
+
+        document
+            .getElementById("minutes")
+            .innerText="00";
+
+        document
+            .getElementById("seconds")
+            .innerText="00";
+
+        return;
+
+    }
+
+
+    const days =
+        Math.floor(
+            difference /
+            (1000*60*60*24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (difference /
+            (1000*60*60)) % 24
+        );
+
+
+    const minutes =
+        Math.floor(
+            (difference /
+            (1000*60)) % 60
+        );
+
+
+    const seconds =
+        Math.floor(
+            (difference / 1000) % 60
+        );
+
+
+    document
+        .getElementById("days")
+        .innerText =
+        String(days)
+        .padStart(2,"0");
+
+
+    document
+        .getElementById("hours")
+        .innerText =
+        String(hours)
+        .padStart(2,"0");
+
+
+    document
+        .getElementById("minutes")
+        .innerText =
+        String(minutes)
+        .padStart(2,"0");
+
+
+    document
+        .getElementById("seconds")
+        .innerText =
+        String(seconds)
+        .padStart(2,"0");
+
+}
+
+
+updateCountdown();
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+function createConfetti(
+    amount=120
+){
+
+    for(
+        let i=0;
+        i<amount;
+        i++
+    ){
+
+        const confetti =
+            document.createElement(
+                "div"
+            );
+
+
+        confetti.className =
+            "confetti";
+
+
+        confetti.style.left =
+            Math.random()*100 +
+            "vw";
+
+
+        confetti.style.animationDuration =
+            (
+                Math.random()*3+2
+            ) + "s";
+
+
+        confetti.style.transform =
+            `rotate(
+                ${Math.random()*360}deg
+            )`;
+
+
+        const shapes=[
+            "🌸",
+            "✨",
+            "🎉",
+            "⭐",
+            "💖"
+        ];
+
+
+        confetti.innerText =
+            shapes[
+                Math.floor(
+                    Math.random()*
+                    shapes.length
+                )
+            ];
+
+
+        confetti.style.fontSize =
+            (
+                Math.random()*15+10
+            ) + "px";
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(
+            ()=>{
+                confetti.remove();
+            },
+            6000
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   FIREWORK
+===================================================== */
+
+function createFirework(){
+
+    const firework =
+        document.createElement(
+            "div"
+        );
+
+
+    firework.className =
+        "firework";
+
+
+    firework.style.left =
+        (
+            Math.random()*80+10
+        ) + "vw";
+
+
+    firework.style.top =
+        (
+            Math.random()*50+15
+        ) + "vh";
+
+
+    document.body.appendChild(
+        firework
+    );
+
+
+    setTimeout(
+        ()=>{
+            firework.remove();
+        },
+        1200
+    );
+
+}
+
+
+/* =====================================================
+   SURPRISE
+===================================================== */
+
+function openSurprise(){
+
+    createConfetti(180);
+
+
+    for(
+        let i=0;
+        i<12;
+        i++
+    ){
+
+        setTimeout(
+            createFirework,
+            i*180
+        );
+
+    }
+
+
+    setTimeout(
+        function(){
+
+            alert(
+                "🎉 HAPPY BIRTHDAY ARISH HUSSAIN! 🎂\n\n"+
+                "May Allah always keep you happy, healthy and successful. ❤️\n\n"+
+                "Lots of love from Saklen Mama! 🥳"
+            );
+
+        },
+        600
+    );
+
+}
+
+
+/* =====================================================
+   MUSIC
+===================================================== */
+
+<audio id="birthdayMusic" autoplay loop>
+    <source src="birthday.mp3" type="audio/mpeg" />
+</audio>
+
+
+/* =====================================================
+   INITIAL CONFETTI
+===================================================== */
+
+setTimeout(
+    function(){
+
+        createConfetti(60);
+
+    },
+    2200
+);
+
+</script>
+
+</body>
+</html>
+```
